@@ -1,0 +1,120 @@
+
+
+@media screen and (max-width: 600px) {
+
+    /* SECTION */
+
+    section {
+        padding: 2rem;
+    }
+
+    /* ABOUT */
+
+    .aboutCon {
+        grid-template-columns: 1fr;
+        .rightAbout {
+            grid-template-columns: 1fr;
+            padding-top: 2.5rem;
+        }
+        .leftAbout {
+            padding-right: 0rem;
+            p {
+                padding-left: 2rem;
+            }
+            h4{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .aboutStats {
+        .progressBars{
+            grid-template-columns: 1fr;
+        }
+    }
+    .timeline {
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    /* PORTFOLIO */
+
+    .portfolios {
+        grid-template-columns: 1fr !important;
+        padding-bottom: 6rem;
+    }
+
+
+}
+
+@media screen and (max-width: 970px) {
+    section {
+        padding: 7rem 6rem;
+    }
+
+        /* HEADER */
+        header {
+            padding: 0;
+        }
+    
+        header .rightHeader {
+            padding-right: 2rem !important;
+        }
+    
+        .themeBtn {
+            width: 35px;
+            height: 35px;
+        }
+    
+        .headerContent {
+            grid-template-columns: 1fr;
+            overflow: auto;
+            padding-bottom: 8rem;
+        }
+    
+        .leftHeader {
+            display: none !important;
+        }
+    
+        .rightHeader {
+            padding: 7rem 11rem;
+            .name {
+                font-size: 1.8rem !important;
+            }
+        }
+
+        /* CONTROLS */
+
+    .controls {
+        top: auto;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        background-color: var(--GRAY5);
+        .control {
+            margin: 0.6rem 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .aboutCon{
+        grid-template-columns: 1fr;
+        .rightAbout {
+            padding-top: 2.5rem;
+        }
+    }    
+
+    .portfolios {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    section {
+        padding: 6rem 11rem;
+    }
+}
